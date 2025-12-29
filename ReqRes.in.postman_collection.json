@@ -453,62 +453,6 @@
 			"response": []
 		},
 		{
-			"name": "login successfull",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});"
-						],
-						"type": "text/javascript",
-						"packages": {},
-						"requests": {}
-					}
-				}
-			],
-			"request": {
-				"auth": {
-					"type": "noauth"
-				},
-				"method": "POST",
-				"header": [
-					{
-						"key": "x-api-key",
-						"value": "reqres_c911c9fcf1f44e10b17fe5d4134d5907",
-						"type": "text"
-					},
-					{
-						"key": "",
-						"value": "",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n  \"email\": \"user@example.com\",\r\n  \"project_id\": \"812\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/api/login",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"api",
-						"login"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "login unsuccessfull",
 			"event": [
 				{
