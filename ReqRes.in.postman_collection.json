@@ -141,13 +141,13 @@
 					}
 				],
 				"url": {
-					"raw": "{{base_url}}/users/2",
+					"raw": "{{base_url}}/users/23",
 					"host": [
 						"{{base_url}}"
 					],
 					"path": [
 						"users",
-						"2"
+						"23"
 					]
 				}
 			},
